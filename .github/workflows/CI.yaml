@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - "master"
+      - "main"
 
 jobs:
   Build:
@@ -71,7 +71,7 @@ jobs:
   
   Deploy-Staging:
     runs-on: ubuntu-latest
-    if: github.event.ref == 'refs/heads/master'
+    if: github.event.ref == 'refs/heads/main'
     needs: ["Build"]
     environment:
       name: staging
