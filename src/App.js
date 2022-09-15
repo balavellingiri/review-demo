@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React feature1
+          Learn React feature2
         </a>
       </header>
     </div>
